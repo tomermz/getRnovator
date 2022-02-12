@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.ratingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/rateReno"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:gravity="center"
+            android:text="@string/please_rate_the_renovator"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:src="@drawable/rate"
+            android:contentDescription="TODO" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/groupRate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation= "horizontal">
+
+
+        <RadioButton
+            android:id="@+id/rate5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/_5"
+            android:textColor="#4CAF50"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rate4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/_4"
+            android:textColor="#CDDC39"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rate3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/_3"
+            android:textColor="#FF9800"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rate2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/_2"
+            android:textColor="#F44336"
+            android:textColorHighlight="#FF5722"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rate1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/_1"
+            android:textColor="#F30606"
+            android:textSize="24sp" />
+
+    </RadioGroup>
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/rating"
+        tools:ignore="ImageContrastCheck" />
+
+    <Button
+        android:id="@+id/rateBut"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="50dp"
+        android:layout_weight="1.1"
+        android:onClick="FuncRate"
+        android:text="@string/rate" />
+
+</LinearLayout>

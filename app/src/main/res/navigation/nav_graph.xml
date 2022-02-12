@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/landingPage">
+
+    <fragment
+        android:id="@+id/landingPage"
+        android:name="com.example.getrenovator.Fragments.LandingPage"
+        android:label="fragment_landing_page"
+        tools:layout="@layout/fragment_landing_page" >
+        <action
+            android:id="@+id/action_landingPage_to_registerPage"
+            app:destination="@id/registerPage" />
+        <action
+            android:id="@+id/action_landingPage_to_registerPage2"
+            app:destination="@id/registerPage" />
+        <action
+            android:id="@+id/action_landingPage_to_renovatorPage"
+            app:destination="@id/renovatorPage" />
+        <action
+            android:id="@+id/action_landingPage_to_clientPage"
+            app:destination="@id/clientPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerPage"
+        android:name="com.example.getrenovator.Fragments.RegisterPage"
+        android:label="fragment_register_page"
+        tools:layout="@layout/fragment_register_page" />
+    <fragment
+        android:id="@+id/renovatorPage"
+        android:name="com.example.getrenovator.Fragments.RenovatorPage"
+        android:label="fragment_renovator_page"
+        tools:layout="@layout/fragment_renovator_page" />
+    <fragment
+        android:id="@+id/clientPage"
+        android:name="com.example.getrenovator.Fragments.ClientPage"
+        android:label="fragment_client_page"
+        tools:layout="@layout/fragment_client_page" >
+        <action
+            android:id="@+id/action_clientPage_to_ratingFragment"
+            app:destination="@id/ratingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ratingFragment"
+        android:name="com.example.getrenovator.Fragments.ratingFragment"
+        android:label="fragment_rating"
+        tools:layout="@layout/fragment_rating" >
+        <action
+            android:id="@+id/action_ratingFragment_to_landingPage"
+            app:destination="@id/landingPage" />
+    </fragment>
+</navigation>

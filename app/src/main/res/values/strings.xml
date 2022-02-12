@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">GetRenovator</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">Name</string>
+    <string name="_5">5</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_2">2</string>
+    <string name="please_rate_the_renovator">Please rate the renovator</string>
+    <string name="rate">Rate</string>
+    <string name="_1">1</string>
+    <string-array name="cities1">
+        <item >Holon</item>
+        <item >Tel_Aviv</item>
+        <item >Herzliya</item>
+        <item >Netanya</item>
+        <item >Ramat_Gan</item>
+    </string-array>
+
+
+</resources>
